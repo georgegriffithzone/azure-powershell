@@ -29,7 +29,7 @@ The **Set-AzureRmApplicationGatewaySslPolicy** cmdlet modifies the SSL policy of
 ### 1:
 ```
 PS C:\>$AppGw = Get-AzureRmApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
-PS C:\> $AppGw = Set-AzureRmApplicationGatewaySslPolicy -ApplicationGateway $getgw -PolicyType Predefined -PolicyName AppGwSslPolicy20170401
+PS C:\>$SetAppGw = Set-AzureRmApplicationGatewaySslPolicy -ApplicationGateway $AppGw -PolicyType Predefined -PolicyName AppGwSslPolicy20170401
 ```
 
 The first command gets the application gateway named ApplicationGateway01 and stores it in the $AppGw variable.
